@@ -74,6 +74,14 @@ flutter:
      - assets/images/Report Card.png
      - assets/images/rect.png
      - assets/images/atlassian.png
+     - assets/images/accenture.png
+     - assets/images/del.png
+     - assets/images/cogni.png
+     - assets/images/send.png
+     - assets/images/save.png
+     - assets/images/tcsdet.png
+     - assets/images/tcs2.png
+     - assets/images/dwd.png
    
 
   # An image asset can refer to one or more resolution-specific "variants", see

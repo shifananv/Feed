@@ -49,7 +49,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Container(
                 width: 386,
-                height: 898,
+                height: 1200,
                 decoration: ShapeDecoration(
                   color: Colors.white,
                   shape: RoundedRectangleBorder(
@@ -367,6 +367,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               ),
+              const SizedBox(height: 20,)
             ],
           ),
         ),
