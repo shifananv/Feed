@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:task5/screens/homepage.dart';
+import 'package:task5/widgets/loading.dart';
 
 class LiveEnroll extends StatefulWidget {
   const LiveEnroll({super.key});
@@ -378,34 +380,46 @@ class _LiveEnrollState extends State<LiveEnroll> {
                     const SizedBox(
                       height: 4,
                     ),
-                    Container(
-                      width: 360,
-                      height: 54,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(25),
-                        color: const Color.fromARGB(255, 32, 61, 205),
-                      ),
-                      child: const Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Confirm Enrollment',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 12,
-                              fontFamily: 'Montserrat',
-                              fontWeight: FontWeight.w600,
-                              height: 0,
+                    GestureDetector(
+                      onTap: () {
+                        showDialog(
+                          context: context,
+                          builder: (BuildContext context) {
+                            return const LoadingJob();
+                          },
+                        );
+                      },
+                      child: Container(
+                        width: 360,
+                        height: 54,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(25),
+                          color: const Color.fromARGB(255, 32, 61, 205),
+                        ),
+                        child: const Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Confirm Enrollment',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 12,
+                                fontFamily: 'Montserrat',
+                                fontWeight: FontWeight.w600,
+                                height: 0,
+                              ),
                             ),
-                          ),
-                        ],
+                          ],
+                        ),
                       ),
                     ),
                   ],
                 ),
               ),
-              const SizedBox(height: 20,)
+              const SizedBox(
+                height: 20,
+              )
             ],
           ),
         ),

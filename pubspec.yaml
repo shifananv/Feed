@@ -82,6 +82,9 @@ flutter:
      - assets/images/tcsdet.png
      - assets/images/tcs2.png
      - assets/images/dwd.png
+     - assets/images/saved.png
+     - assets/images/loading.gif
+     - assets/images/success.gif
    
 
   # An image asset can refer to one or more resolution-specific "variants", see

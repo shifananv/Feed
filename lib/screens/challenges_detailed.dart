@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:task5/screens/homepage.dart';
-
+import 'package:task5/widgets/bookmark.dart';
+import 'package:task5/widgets/enroll.dart';
 
 class ChallengeDetails extends StatefulWidget {
   const ChallengeDetails({super.key});
@@ -11,6 +11,7 @@ class ChallengeDetails extends StatefulWidget {
 }
 
 class _ChallengeDetailsState extends State<ChallengeDetails> {
+  final double _rotationAngle = -45;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,13 +26,15 @@ class _ChallengeDetailsState extends State<ChallengeDetails> {
           },
         ),
         actions: [
-          IconButton(
-            icon: Image.asset('assets/images/save.png'),
-            onPressed: () {},
-          ),
-          IconButton(
-            icon: Image.asset('assets/images/send.png'),
-            onPressed: () {},
+          const BookmarkButton(),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 6),
+            child: IconButton(
+              icon: Transform.rotate(
+                  angle: _rotationAngle * (3.14 / 180),
+                  child: const Icon(Icons.send_outlined)),
+              onPressed: () {},
+            ),
           ),
         ],
       ),
@@ -45,7 +48,7 @@ class _ChallengeDetailsState extends State<ChallengeDetails> {
               ),
               Container(
                 width: 386,
-                height: 950,
+                height: 922,
                 decoration: ShapeDecoration(
                   color: Colors.white,
                   shape: RoundedRectangleBorder(
@@ -343,11 +346,12 @@ class _ChallengeDetailsState extends State<ChallengeDetails> {
                               padding: const EdgeInsets.only(right: 8),
                               child: GestureDetector(
                                 onTap: () {
-                                  // Navigator.push(
-                                  //   context,
-                                  //   MaterialPageRoute(
-                                  //       builder: (context) =>  ()),
-                                  // );
+                                  showModalBottomSheet(
+                                    context: context,
+                                    builder: (BuildContext context) {
+                                      return const EnrollPopup();
+                                    },
+                                  );
                                 },
                                 child: Container(
                                   width: 360,
@@ -382,7 +386,10 @@ class _ChallengeDetailsState extends State<ChallengeDetails> {
                     )
                   ],
                 ),
-              )
+              ),
+              const SizedBox(
+                height: 13,
+              ),
             ],
           ),
         ),
