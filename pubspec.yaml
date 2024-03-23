@@ -85,6 +85,15 @@ flutter:
      - assets/images/saved.png
      - assets/images/loading.gif
      - assets/images/success.gif
+     - assets/images/Group.png
+     - assets/images/google.png
+     - assets/images/d.png
+     - assets/images/dsc.png
+     - assets/images/imiot.png
+     - assets/images/ui.png
+     - assets/images/shareinfo.png
+   
+   
    
 
   # An image asset can refer to one or more resolution-specific "variants", see
