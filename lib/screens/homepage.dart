@@ -48,7 +48,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Container(
                 width: 386,
-                height: 1200,
+                height:1130,
                 decoration: ShapeDecoration(
                   color: Colors.white,
                   shape: RoundedRectangleBorder(
@@ -370,6 +370,34 @@ class _HomePageState extends State<HomePage> {
             ],
           ),
         ),
+      ),
+      bottomNavigationBar: BottomNavigationBar(
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
+        items: [
+          BottomNavigationBarItem(
+            icon: Image.asset('assets/images/b1.png'),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset('assets/images/b2.png'),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset('assets/images/b3.png'),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset('assets/images/4b.png'),
+            label: '',
+          ),
+          BottomNavigationBarItem(
+            icon: Image.asset('assets/images/b5.png'),
+            label: '',
+          ),
+        ],
+        onTap: (index) {
+        },
       ),
     );
   }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:task5/screens/homepage.dart';
 import 'package:task5/screens/status_categories.dart';
 
 class MyChallenges extends StatefulWidget {
@@ -28,6 +29,14 @@ class _MyChallengesState extends State<MyChallenges> {
             ),
           ),
         ),
+        leading: GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const HomePage()),
+              );
+            },
+            child: const Icon(Icons.arrow_back)),
         actions: const [],
       ),
       endDrawer: const StatusCategory(),
@@ -68,9 +77,9 @@ class _MyChallengesState extends State<MyChallenges> {
                   Padding(
                     padding: const EdgeInsets.only(right: 8),
                     child: GestureDetector(
-                      onTap: () {
-                        _scaffoldKey.currentState!.openEndDrawer();
-                      },
+                        onTap: () {
+                          _scaffoldKey.currentState!.openEndDrawer();
+                        },
                         child: Image.asset('assets/images/Group.png')),
                   )
                 ],

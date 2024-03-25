@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:task5/screens/live_enroll.dart';
+import 'package:task5/screens/profile_enroll.dart';
 
 class EnrollPopup extends StatelessWidget {
   const EnrollPopup({super.key});
@@ -79,26 +81,34 @@ class EnrollPopup extends StatelessWidget {
                   ),
                 ),
               ),
-              Container(
-                width: 149,
-                height: 47,
-                decoration: ShapeDecoration(
-                  color: const Color(0xFF414ECA),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
+              GestureDetector(
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => const ProfileEnroll()),
+                  );
+                },
+                child: Container(
+                  width: 149,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF414ECA),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
                   ),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Enroll with Profile',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 13,
-                      fontFamily: 'Nunito',
-                      fontWeight: FontWeight.w700,
-                      height: 0,
-                      letterSpacing: 0.65,
+                  child: const Center(
+                    child: Text(
+                      'Enroll with Profile',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 13,
+                        fontFamily: 'Nunito',
+                        fontWeight: FontWeight.w700,
+                        height: 0,
+                        letterSpacing: 0.65,
+                      ),
                     ),
                   ),
                 ),
