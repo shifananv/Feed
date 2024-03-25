@@ -47,7 +47,7 @@ class _ChallengeDetailsState extends State<ChallengeDetails> {
                 height: 6,
               ),
               Container(
-                width: 386,
+                width: 376,
                 height: 922,
                 decoration: ShapeDecoration(
                   color: Colors.white,

@@ -41,7 +41,7 @@ class _LiveEnrollState extends State<LiveEnroll> {
           child: Column(
             children: [
               Container(
-                width: 386,
+                width: 376,
                 height: 840,
                 decoration: ShapeDecoration(
                   color: Colors.white,

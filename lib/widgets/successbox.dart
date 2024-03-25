@@ -99,26 +99,31 @@ class _SuccessBoxState extends State<SuccessBox> {
               height: 15,
             ),
             Center(
-              child: Container(
-                width: 212,
-                height: 47,
-                decoration: ShapeDecoration(
-                  color: const Color(0xFFE4E6FC),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(30),
+              child: GestureDetector(
+                onTap: () {
+                  Navigator.of(context).pop();
+                },
+                child: Container(
+                  width: 212,
+                  height: 47,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFFE4E6FC),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(30),
+                    ),
                   ),
-                ),
-                child: const Center(
-                  child: Text(
-                    'Cancel',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(
-                      color: Color(0xFF414ECA),
-                      fontSize: 15,
-                      fontFamily: 'Nunito',
-                      fontWeight: FontWeight.w700,
-                      height: 0,
-                      letterSpacing: 0.75,
+                  child: const Center(
+                    child: Text(
+                      'Cancel',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Color(0xFF414ECA),
+                        fontSize: 15,
+                        fontFamily: 'Nunito',
+                        fontWeight: FontWeight.w700,
+                        height: 0,
+                        letterSpacing: 0.75,
+                      ),
                     ),
                   ),
                 ),

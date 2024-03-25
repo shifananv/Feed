@@ -47,7 +47,7 @@ class _HomePageState extends State<HomePage> {
                 height: 10,
               ),
               Container(
-                width: 386,
+                width: 376,
                 height:1130,
                 decoration: ShapeDecoration(
                   color: Colors.white,
