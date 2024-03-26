@@ -10,7 +10,7 @@ class EnrollPopup extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: 407,
-      height: 110,
+      height: 147,
       decoration: const ShapeDecoration(
         shape: RoundedRectangleBorder(
           side: BorderSide(
@@ -23,7 +23,7 @@ class EnrollPopup extends StatelessWidget {
       child: Column(
         children: [
           const SizedBox(
-            height: 13,
+            height: 19,
           ),
           Center(
             child: Container(
@@ -44,7 +44,7 @@ class EnrollPopup extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            height: 15,
+            height: 40,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,

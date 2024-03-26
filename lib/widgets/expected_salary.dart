@@ -30,7 +30,7 @@ class ExpectedSalary extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/pie.png'),
+                Icon(Icons.pie_chart,size: 18,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,9 +45,9 @@ class ExpectedSalary extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 173,
+                  width: 171,
                 ),
-                Image.asset('assets/images/add.png')
+                Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
               ],
             ),
           ),

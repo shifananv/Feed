@@ -129,9 +129,9 @@ class Certification extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 7,
+                width: 1,
               ),
-              Image.asset('assets/images/add.png')
+             Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -212,9 +212,9 @@ class Certification extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 40,
+                width: 33,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -295,9 +295,9 @@ class Certification extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 69,
+                width: 63,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
         ],

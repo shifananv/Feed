@@ -129,9 +129,9 @@ class ProfessionalExams extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 130,
+                width: 127,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -212,9 +212,9 @@ class ProfessionalExams extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 133,
+                width: 131,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
         ],

@@ -28,7 +28,7 @@ class _ChallengeDetailsState extends State<ChallengeDetails> {
         actions: [
           const BookmarkButton(),
           Padding(
-            padding: const EdgeInsets.only(bottom: 6),
+            padding: const EdgeInsets.only(bottom: 6,right: 20),
             child: IconButton(
               icon: Transform.rotate(
                   angle: _rotationAngle * (3.14 / 180),
@@ -116,18 +116,17 @@ class _ChallengeDetailsState extends State<ChallengeDetails> {
                             const SizedBox(
                               height: 7,
                             ),
-                            Row(
+                            const Row(
                               children: [
                                 SizedBox(
                                   width: 20,
                                   height: 20,
-                                  child: Image.asset(
-                                      'assets/images/Curriculum.png'),
+                                  child: Icon(Icons.laptop_rounded,color: Color(0xFF260446),size: 20,)
                                 ),
-                                const SizedBox(
+                                SizedBox(
                                   width: 3,
                                 ),
-                                const Text(
+                                Text(
                                   'Key Benefits',
                                   style: TextStyle(
                                     color: Color(0xFF3A0372),

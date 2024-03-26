@@ -123,9 +123,9 @@ class Affiliations extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 125,
+                width: 123,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
         ],

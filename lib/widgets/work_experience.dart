@@ -30,7 +30,7 @@ class WorkExperience extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/experience.png'),
+                Icon(Icons.work_history,size: 19,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -47,7 +47,7 @@ class WorkExperience extends StatelessWidget {
                 const SizedBox(
                   width: 165,
                 ),
-                Image.asset('assets/images/plus.png')
+                Icon(Icons.add,size: 25,color: Color.fromARGB(255, 15, 136, 242)),
               ],
             ),
           ),
@@ -125,7 +125,7 @@ class WorkExperience extends StatelessWidget {
               const SizedBox(
                 width: 109,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -202,7 +202,7 @@ class WorkExperience extends StatelessWidget {
               const SizedBox(
                 width: 100,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -277,9 +277,9 @@ class WorkExperience extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 107,
+                width: 109,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -354,9 +354,9 @@ class WorkExperience extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 100,
+                width: 104,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(

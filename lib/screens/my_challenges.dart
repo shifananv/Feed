@@ -29,6 +29,7 @@ class _MyChallengesState extends State<MyChallenges> {
             ),
           ),
         ),
+        automaticallyImplyLeading: false,
         leading: GestureDetector(
             onTap: () {
               Navigator.push(
@@ -37,7 +38,7 @@ class _MyChallengesState extends State<MyChallenges> {
               );
             },
             child: const Icon(Icons.arrow_back)),
-        actions: const [],
+        actions:  [Container()],
       ),
       endDrawer: const StatusCategory(),
       body: Column(
@@ -80,7 +81,7 @@ class _MyChallengesState extends State<MyChallenges> {
                         onTap: () {
                           _scaffoldKey.currentState!.openEndDrawer();
                         },
-                        child: Image.asset('assets/images/Group.png')),
+                        child: const Icon(Icons.filter_alt)),
                   )
                 ],
               ),
@@ -666,7 +667,7 @@ class _MyChallengesState extends State<MyChallenges> {
                           width: 78,
                           height: 17,
                           decoration: ShapeDecoration(
-                            color: Color(0xFFDEF9E5),
+                            color: const Color(0xFFDEF9E5),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5)),
                           ),
@@ -794,7 +795,7 @@ class _MyChallengesState extends State<MyChallenges> {
                           width: 78,
                           height: 17,
                           decoration: ShapeDecoration(
-                            color: Color(0xFFDEF9E5),
+                            color: const Color(0xFFDEF9E5),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5)),
                           ),
@@ -820,7 +821,7 @@ class _MyChallengesState extends State<MyChallenges> {
                           width: 78,
                           height: 17,
                           decoration: ShapeDecoration(
-                            color: Color(0xFFDEF9E5),
+                            color: const Color(0xFFDEF9E5),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(5)),
                           ),

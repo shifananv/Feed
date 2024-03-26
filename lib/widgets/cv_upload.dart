@@ -45,9 +45,9 @@ class CvUpload extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 211,
+                  width: 208,
                 ),
-                Image.asset('assets/images/add.png')
+                Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
               ],
             ),
           ),

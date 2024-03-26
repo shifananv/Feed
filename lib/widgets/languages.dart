@@ -110,9 +110,9 @@ class Languages extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 165,
+                width: 163,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -176,7 +176,7 @@ class Languages extends StatelessWidget {
               const SizedBox(
                 width: 165,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -238,9 +238,9 @@ class Languages extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 165,
+                width: 164,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
         ],

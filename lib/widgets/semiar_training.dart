@@ -131,7 +131,7 @@ class SeminarTraining extends StatelessWidget {
               const SizedBox(
                 width: 36,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -214,7 +214,7 @@ class SeminarTraining extends StatelessWidget {
               const SizedBox(
                 width: 117,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
         ],

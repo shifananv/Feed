@@ -25,8 +25,9 @@ class HomeCard extends StatelessWidget {
                   color: Colors.white,
                   shape: RoundedRectangleBorder(
                     side: const BorderSide(width: 1, color: Color(0xFF414ECA)),
-                    borderRadius: BorderRadius.circular(15),
+                    borderRadius: BorderRadius.circular(30),
                   ),
+                  
                 ),
                 child: Column(
                   children: [
@@ -89,23 +90,20 @@ class HomeCard extends StatelessWidget {
                     const SizedBox(
                       height: 14,
                     ),
-                    Row(
+                    const Row(
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           width: 18,
                         ),
                         SizedBox(
                           width: 19,
                           height: 19,
-                          child: Image.asset(
-                            'assets/images/Report Card.png',
-                            fit: BoxFit.cover,
-                          ),
+                          child: Icon(Icons.article,color: Color(0xFF3A0372),size: 18,)
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 7,
                         ),
-                        const Text(
+                        Text(
                           '5 Round Evaluation Process',
                           style: TextStyle(
                             color: Color(0xFF3A0372),
@@ -121,23 +119,20 @@ class HomeCard extends StatelessWidget {
                     const SizedBox(
                       height: 8,
                     ),
-                    Row(
+                    const Row(
                       children: [
-                        const SizedBox(
+                        SizedBox(
                           width: 18,
                         ),
                         SizedBox(
                           width: 19,
                           height: 19,
-                          child: Image.asset(
-                            'assets/images/Curriculum.png',
-                            fit: BoxFit.cover,
-                          ),
+                          child: Icon(Icons.laptop_rounded,color: Color(0xFF3A0372),size: 18,)
                         ),
-                        const SizedBox(
+                        SizedBox(
                           width: 7,
                         ),
-                        const Text(
+                        Text(
                           //cusomize this text
                           'Be a Data Scientist at TCS',
                           style: TextStyle(
@@ -186,7 +181,7 @@ class HomeCard extends StatelessWidget {
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
                   side: const BorderSide(width: 1, color: Color(0xFF414ECA)),
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
               child: Column(
@@ -255,23 +250,20 @@ class HomeCard extends StatelessWidget {
                   const SizedBox(
                     height: 14,
                   ),
-                  Row(
+                  const Row(
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         width: 18,
                       ),
                       SizedBox(
                         width: 19,
                         height: 19,
-                        child: Image.asset(
-                          'assets/images/Report Card.png',
-                          fit: BoxFit.cover,
-                        ),
+                        child: Icon(Icons.article,color: Color(0xFF3A0372),size: 18,)
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 7,
                       ),
-                      const Text(
+                      Text(
                         '7 Round Evaluation Process', //customize this text only at 5
                         style: TextStyle(
                           color: Color(0xFF3A0372),
@@ -287,23 +279,20 @@ class HomeCard extends StatelessWidget {
                   const SizedBox(
                     height: 2,
                   ),
-                  Row(
+                  const Row(
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         width: 18,
                       ),
                       SizedBox(
                         width: 19,
                         height: 19,
-                        child: Image.asset(
-                          'assets/images/Curriculum.png',
-                          fit: BoxFit.cover,
-                        ),
+                        child:Icon(Icons.laptop_rounded,color: Color(0xFF3A0372),size: 18,)
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 7,
                       ),
-                      const Text(
+                      Text(
                         //cusomize this text
                         'Placement Assured Challenge',
                         style: TextStyle(
@@ -341,7 +330,7 @@ class HomeCard extends StatelessWidget {
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
                   side: const BorderSide(width: 1, color: Color(0xFF414ECA)),
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
               child: Column(
@@ -410,23 +399,20 @@ class HomeCard extends StatelessWidget {
                   const SizedBox(
                     height: 14,
                   ),
-                  Row(
+                  const Row(
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         width: 18,
                       ),
                       SizedBox(
                         width: 19,
                         height: 19,
-                        child: Image.asset(
-                          'assets/images/Report Card.png',
-                          fit: BoxFit.cover,
-                        ),
+                        child: Icon(Icons.article,color: Color(0xFF3A0372),size: 18,),
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 7,
                       ),
-                      const Text(
+                      Text(
                         '4 Round Evaluation Process', //customize this text only at 5
                         style: TextStyle(
                           color: Color(0xFF3A0372),
@@ -442,23 +428,20 @@ class HomeCard extends StatelessWidget {
                   const SizedBox(
                     height: 2,
                   ),
-                  Row(
+                  const Row(
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         width: 18,
                       ),
                       SizedBox(
                         width: 19,
                         height: 19,
-                        child: Image.asset(
-                          'assets/images/Curriculum.png',
-                          fit: BoxFit.cover,
-                        ),
+                        child: Icon(Icons.laptop_rounded,color: Color(0xFF3A0372),size: 18,)
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 7,
                       ),
-                      const Text(
+                      Text(
                         //cusomize this text
                         'Software Engineer Role',
                         style: TextStyle(
@@ -496,7 +479,7 @@ class HomeCard extends StatelessWidget {
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
                   side: const BorderSide(width: 1, color: Color(0xFF414ECA)),
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
               child: Column(
@@ -564,23 +547,20 @@ class HomeCard extends StatelessWidget {
                   const SizedBox(
                     height: 14,
                   ),
-                  Row(
+                  const Row(
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         width: 18,
                       ),
                       SizedBox(
                         width: 19,
                         height: 19,
-                        child: Image.asset(
-                          'assets/images/Report Card.png',
-                          fit: BoxFit.cover,
-                        ),
+                        child: Icon(Icons.article,color: Color(0xFF3A0372),size: 18,)
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 7,
                       ),
-                      const Text(
+                      Text(
                         '5 Round Evaluation Process', //customize this text only at 5
                         style: TextStyle(
                           color: Color(0xFF3A0372),
@@ -596,23 +576,20 @@ class HomeCard extends StatelessWidget {
                   const SizedBox(
                     height: 2,
                   ),
-                  Row(
+                  const Row(
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         width: 18,
                       ),
                       SizedBox(
                         width: 19,
                         height: 19,
-                        child: Image.asset(
-                          'assets/images/Curriculum.png',
-                          fit: BoxFit.cover,
-                        ),
+                        child:Icon(Icons.laptop_rounded,color: Color(0xFF3A0372),size: 18,)
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 7,
                       ),
-                      const Text(
+                      Text(
                         //cusomize this text
                         'Placement Assured Challenge',
                         style: TextStyle(
@@ -650,7 +627,7 @@ class HomeCard extends StatelessWidget {
                 color: Colors.white,
                 shape: RoundedRectangleBorder(
                   side: const BorderSide(width: 1, color: Color(0xFF414ECA)),
-                  borderRadius: BorderRadius.circular(15),
+                  borderRadius: BorderRadius.circular(30),
                 ),
               ),
               child: Column(
@@ -718,23 +695,20 @@ class HomeCard extends StatelessWidget {
                   const SizedBox(
                     height: 14,
                   ),
-                  Row(
+                  const Row(
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         width: 18,
                       ),
                       SizedBox(
                         width: 19,
                         height: 19,
-                        child: Image.asset(
-                          'assets/images/Report Card.png',
-                          fit: BoxFit.cover,
-                        ),
+                        child:Icon(Icons.article,color: Color(0xFF3A0372),size: 18,)
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 7,
                       ),
-                      const Text(
+                      Text(
                         '5 Round Evaluation Process', //customize this text only at 5
                         style: TextStyle(
                           color: Color(0xFF3A0372),
@@ -750,23 +724,20 @@ class HomeCard extends StatelessWidget {
                   const SizedBox(
                     height: 2,
                   ),
-                  Row(
+                  const Row(
                     children: [
-                      const SizedBox(
+                      SizedBox(
                         width: 18,
                       ),
                       SizedBox(
                         width: 19,
                         height: 19,
-                        child: Image.asset(
-                          'assets/images/Curriculum.png',
-                          fit: BoxFit.cover,
-                        ),
+                        child: Icon(Icons.laptop_rounded,color: Color(0xFF3A0372),size: 18,)
                       ),
-                      const SizedBox(
+                      SizedBox(
                         width: 7,
                       ),
-                      const Text(
+                      Text(
                         //cusomize this text
                         'Placement Assured Challenge',
                         style: TextStyle(

@@ -155,9 +155,9 @@ class References extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 77,
+                width: 76,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
         ],

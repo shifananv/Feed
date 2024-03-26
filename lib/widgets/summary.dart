@@ -30,7 +30,7 @@ class Summary extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/brief.png'),
+                Icon(Icons.file_copy,size: 17,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,9 +45,9 @@ class Summary extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 215,
+                  width: 212,
                 ),
-                Image.asset('assets/images/add.png')
+                Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,),
               ],
             ),
           ),

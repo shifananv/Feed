@@ -160,11 +160,11 @@ class Projects extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 59,
+                width: 56,
               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 26),
-                child: Image.asset('assets/images/add.png'),
+                child: Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,),
               )
             ],
           ),
@@ -277,11 +277,11 @@ class Projects extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 59,
+                width: 53,
               ),
               Padding(
                 padding: const EdgeInsets.only(bottom: 26),
-                child: Image.asset('assets/images/add.png'),
+                child: Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,),
               )
             ],
           ),

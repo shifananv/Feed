@@ -28,13 +28,13 @@ class PersonalInfo extends StatelessWidget {
                 ),
               ),
             ),
-            child: Row(
+            child: const Row(
               children: [
-                Image.asset('assets/images/account.png'),
-                const SizedBox(
+                Icon(Icons.account_circle_rounded,color: Color(0xFF260446),size: 20,),
+                SizedBox(
                   width: 6,
                 ),
-                const Text(
+                Text(
                   'Personal Information',
                   style: TextStyle(
                     color: Color(0xFF260446),
@@ -44,26 +44,26 @@ class PersonalInfo extends StatelessWidget {
                     height: 0,
                   ),
                 ),
-                const SizedBox(
+                SizedBox(
                   width: 139,
                 ),
-                Image.asset('assets/images/add.png')
-              ],
+                Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
+              ]
             ),
           ),
           const SizedBox(
             height: 15,
           ),
-          Row(
+          const Row(
             children: [
-              const SizedBox(
+              SizedBox(
                 width: 15,
               ),
-              Image.asset('assets/images/location.png'),
-              const SizedBox(
+              Icon(Icons.location_pin,size: 15,color:Color.fromARGB(210, 92, 92, 92)),
+              SizedBox(
                 width: 13,
               ),
-              const Text(
+              Text(
                 'Kannur, Kerala, India -670107',
                 style: TextStyle(
                   color: Color(0xFF434343),
@@ -78,16 +78,16 @@ class PersonalInfo extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Row(
+          const Row(
             children: [
-              const SizedBox(
+              SizedBox(
                 width: 16,
               ),
-              Image.asset('assets/images/date.png'),
-              const SizedBox(
+              Icon(Icons.hourglass_full_outlined,size: 15,color:Color.fromARGB(210, 92, 92, 92)),
+              SizedBox(
                 width: 13,
               ),
-              const Text.rich(
+              Text.rich(
                 TextSpan(
                   children: [
                     TextSpan(
@@ -123,7 +123,7 @@ class PersonalInfo extends StatelessWidget {
               const SizedBox(
                 width: 16,
               ),
-              Image.asset('assets/images/phone.png'),
+              Icon(Icons.call,size: 15,color:Color.fromARGB(210, 92, 92, 92)),
               const SizedBox(
                 width: 9,
               ),
@@ -147,7 +147,7 @@ class PersonalInfo extends StatelessWidget {
               const SizedBox(
                 width: 16,
               ),
-              Image.asset('assets/images/email.png'),
+              Icon(Icons.mail,size: 15,color:Color.fromARGB(210, 92, 92, 92)),
               const SizedBox(
                 width: 9,
               ),

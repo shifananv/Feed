@@ -123,9 +123,9 @@ class VolunteeringExperience extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 42,
+                width: 39,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -200,9 +200,9 @@ class VolunteeringExperience extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 97,
+                width: 95,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
         ],

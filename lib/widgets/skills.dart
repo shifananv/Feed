@@ -45,9 +45,9 @@ class Skills extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 241,
+                  width: 240,
                 ),
-                Image.asset('assets/images/add.png')
+                Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
               ],
             ),
           ),

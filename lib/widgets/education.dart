@@ -30,7 +30,7 @@ class Education extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/cap.png'),
+                Icon(Icons.school,size: 25,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,9 +45,9 @@ class Education extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 210,
+                  width: 203,
                 ),
-                Image.asset('assets/images/plus.png')
+                Icon(Icons.add,size: 25,color: Color.fromARGB(255, 15, 136, 242)),
               ],
             ),
           ),
@@ -138,7 +138,7 @@ class Education extends StatelessWidget {
               const SizedBox(
                 width: 95,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -226,9 +226,9 @@ class Education extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 95,
+                width: 91,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(
@@ -316,9 +316,9 @@ class Education extends StatelessWidget {
                 ],
               ),
               const SizedBox(
-                width: 95,
+                width: 91,
               ),
-              Image.asset('assets/images/add.png')
+              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
         ],
