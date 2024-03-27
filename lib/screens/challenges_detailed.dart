@@ -27,13 +27,15 @@ class _ChallengeDetailsState extends State<ChallengeDetails> {
         ),
         actions: [
           const BookmarkButton(),
+          
           Padding(
-            padding: const EdgeInsets.only(bottom: 6,right: 20),
+            padding: const EdgeInsets.only(bottom: 6,right: 15),
             child: IconButton(
               icon: Transform.rotate(
                   angle: _rotationAngle * (3.14 / 180),
                   child: const Icon(Icons.send_outlined)),
               onPressed: () {},
+              //padding: const EdgeInsets.symmetric(horizontal: -20.0),
             ),
           ),
         ],

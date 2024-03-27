@@ -20,7 +20,7 @@ class OrganizationActivities extends StatelessWidget {
           const SizedBox(
             width: 12,
           ),
-          Image.asset('assets/images/People.png'),
+          Icon(Icons.groups_3,size: 25,color: Color(0xFF260446)),
           const SizedBox(
             width: 6,
           ),
@@ -35,7 +35,7 @@ class OrganizationActivities extends StatelessWidget {
             ),
           ),
           const SizedBox(
-            width: 148,
+            width: 145,
           ),
           Image.asset('assets/images/plus.png')
         ],

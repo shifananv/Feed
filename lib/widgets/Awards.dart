@@ -30,7 +30,7 @@ class Awards extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/star.png'),
+                Icon(Icons.star,size: 25,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,7 +45,7 @@ class Awards extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 102,
+                  width: 99,
                 ),
                 Image.asset('assets/images/plus.png')
               ],
@@ -131,7 +131,7 @@ class Awards extends StatelessWidget {
               const SizedBox(
                 width: 80,
               ),
-              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
+              const Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
             ],
           ),
           const SizedBox(

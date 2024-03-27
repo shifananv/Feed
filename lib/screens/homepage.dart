@@ -376,7 +376,7 @@ class _HomePageState extends State<HomePage> {
         showUnselectedLabels: false,
         items: [
           const BottomNavigationBarItem(
-            icon: Icon(Icons.home,color: Color(0xFF260446),size: 34,),
+            icon: Icon(Icons.home_outlined,color: Color(0xFF260446),size: 34,),
             label: '',
           ),
           const BottomNavigationBarItem(
@@ -392,7 +392,7 @@ class _HomePageState extends State<HomePage> {
             label: '',
           ),
           const BottomNavigationBarItem(
-            icon: Icon(Icons.account_circle,color: Color(0xFF260446),size: 34,),
+            icon: Icon(Icons.account_box_outlined,color: Color(0xFF260446),size: 34,),
             label: '',
           ),
         ],

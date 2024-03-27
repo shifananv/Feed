@@ -30,7 +30,7 @@ class Certification extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/Diploma.png'),
+                Icon(Icons.card_membership,size: 25,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,7 +45,7 @@ class Certification extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 104,
+                  width: 99,
                 ),
                 Image.asset('assets/images/plus.png')
               ],

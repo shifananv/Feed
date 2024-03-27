@@ -28,13 +28,13 @@ class CvUpload extends StatelessWidget {
                 ),
               ),
             ),
-            child: Row(
+            child: const Row(
               children: [
-                Image.asset('assets/images/ref.png'),
-                const SizedBox(
+                Icon(Icons.escalator_warning,size: 25,color: Color(0xFF260446),),
+                SizedBox(
                   width: 6,
                 ),
-                const Text(
+                Text(
                   'CV/Resume',
                   style: TextStyle(
                     color: Color(0xFF260446),
@@ -44,8 +44,8 @@ class CvUpload extends StatelessWidget {
                     height: 0,
                   ),
                 ),
-                const SizedBox(
-                  width: 208,
+                SizedBox(
+                  width: 206,
                 ),
                 Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
               ],
@@ -63,14 +63,17 @@ class CvUpload extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15),
               ),
             ),
-            child:  Row(
+            child:  const Row(
               children: [
-                const SizedBox(width: 15,),
-                Image.asset('assets/images/PDF.png'),
-                const SizedBox(
+                SizedBox(width: 15,),
+                Padding(
+                  padding: EdgeInsets.only(bottom: 3),
+                  child: Icon(Icons.picture_as_pdf,size: 25,color: Color.fromARGB(255, 198, 21, 21)),
+                ),
+                SizedBox(
                   width: 8,
                 ),
-                const Column(
+                Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

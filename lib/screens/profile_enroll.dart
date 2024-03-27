@@ -18,7 +18,7 @@ import 'package:task5/widgets/skills.dart';
 import 'package:task5/widgets/summary.dart';
 import 'package:task5/widgets/volunteering_experience.dart';
 import 'package:task5/widgets/work_experience.dart';
-
+import 'dart:math' as math;
 class ProfileEnroll extends StatelessWidget {
   const ProfileEnroll({super.key});
 
@@ -37,12 +37,15 @@ class ProfileEnroll extends StatelessWidget {
         ),
         actions: [
           IconButton(
-            icon: Image.asset('assets/images/save.png'),
+            icon: Icon(Icons.bookmark_border,size: 25,color: Color.fromARGB(255, 41, 41, 41)),
             onPressed: () {},
           ),
-          IconButton(
-            icon: Image.asset('assets/images/send.png'),
-            onPressed: () {},
+          Padding(
+            padding: const EdgeInsets.only(right: 15,bottom: 5),
+            child: IconButton(
+              icon: Transform.rotate( angle: -math.pi / 4,child: Icon(Icons.send_outlined,size: 25,color: Color.fromARGB(255, 41, 41, 41))),
+              onPressed: () {},
+            ),
           ),
         ],
       ),

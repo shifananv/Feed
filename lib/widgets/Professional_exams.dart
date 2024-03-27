@@ -30,7 +30,7 @@ class ProfessionalExams extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/Document.png'),
+                Icon(Icons.description,size: 25,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,7 +45,7 @@ class ProfessionalExams extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 145,
+                  width: 141,
                 ),
                 Image.asset('assets/images/plus.png')
               ],

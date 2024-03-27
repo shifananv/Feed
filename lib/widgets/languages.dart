@@ -30,7 +30,7 @@ class Languages extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/sem.png'),
+                Icon(Icons.language_sharp,size: 25,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,7 +45,7 @@ class Languages extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 203,
+                  width: 200,
                 ),
                 Image.asset('assets/images/plus.png')
               ],
@@ -72,7 +72,7 @@ class Languages extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  child: Image.asset('assets/images/lang.png'),
+                  child: Icon(Icons.language_outlined,size: 25,color: Color.fromARGB(255, 4, 157, 181)),
                 ),
               ),
               const SizedBox(
@@ -136,7 +136,7 @@ class Languages extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  child: Image.asset('assets/images/lang.png'),
+                  child: Icon(Icons.language_outlined,size: 25,color: Color.fromARGB(255, 4, 157, 181)),
                 ),
               ),
               const SizedBox(
@@ -200,7 +200,7 @@ class Languages extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                     ),
                   ),
-                  child: Image.asset('assets/images/lang.png'),
+                  child: Icon(Icons.language_outlined,size: 25,color: Color.fromARGB(255, 4, 157, 181)),
                 ),
               ),
               const SizedBox(

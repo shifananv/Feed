@@ -30,7 +30,7 @@ class Skills extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/Learning.png'),
+                Icon(Icons.psychology,size: 25,color: Color(0xFF260446),),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,7 +45,7 @@ class Skills extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 240,
+                  width: 237,
                 ),
                 Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
               ],

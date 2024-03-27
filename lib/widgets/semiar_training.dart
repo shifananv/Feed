@@ -30,7 +30,7 @@ class SeminarTraining extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/sem.png'),
+                Icon(Icons.show_chart_rounded,size: 25,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,7 +45,7 @@ class SeminarTraining extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 121,
+                  width: 118,
                 ),
                 Image.asset('assets/images/plus.png')
               ],

@@ -30,7 +30,7 @@ class VolunteeringExperience extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/vol1.png'),
+                Icon(Icons.people,size: 25,color: Color(0xFF260446)),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,7 +45,7 @@ class VolunteeringExperience extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 137,
+                  width: 134,
                 ),
                 Image.asset('assets/images/plus.png')
               ],

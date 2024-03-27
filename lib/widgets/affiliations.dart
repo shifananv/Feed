@@ -30,7 +30,7 @@ class Affiliations extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/quality.png'),
+                Icon(Icons.domain_verification,size: 25,color: Color(0xFF260446),),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,7 +45,7 @@ class Affiliations extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 211,
+                  width: 209,
                 ),
                 Image.asset('assets/images/plus.png')
               ],

@@ -30,7 +30,7 @@ class References extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Image.asset('assets/images/ref.png'),
+                Icon(Icons.people_alt,size: 25,color:Color(0xFF260446),),
                 const SizedBox(
                   width: 6,
                 ),
@@ -45,7 +45,7 @@ class References extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(
-                  width: 211,
+                  width: 207,
                 ),
                 Image.asset('assets/images/plus.png')
               ],
