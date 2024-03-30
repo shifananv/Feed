@@ -44,9 +44,7 @@ class PersonalInfo extends StatelessWidget {
                     height: 0,
                   ),
                 ),
-                SizedBox(
-                  width: 139,
-                ),
+                Spacer(),
                 Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
               ]
             ),
@@ -118,16 +116,16 @@ class PersonalInfo extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Row(
+          const Row(
             children: [
-              const SizedBox(
+              SizedBox(
                 width: 16,
               ),
               Icon(Icons.call,size: 15,color:Color.fromARGB(210, 92, 92, 92)),
-              const SizedBox(
+              SizedBox(
                 width: 9,
               ),
-              const Text(
+              Text(
                 '+91 12345 67890',
                 style: TextStyle(
                   color: Color(0xFF434343),
@@ -142,16 +140,16 @@ class PersonalInfo extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-          Row(
+          const Row(
             children: [
-              const SizedBox(
+              SizedBox(
                 width: 16,
               ),
               Icon(Icons.mail,size: 15,color:Color.fromARGB(210, 92, 92, 92)),
-              const SizedBox(
+              SizedBox(
                 width: 9,
               ),
-              const Text(
+              Text(
                 'akshayashokanpothan@imiot.co.in',
                 style: TextStyle(
                   color: Color(0xFF434343),

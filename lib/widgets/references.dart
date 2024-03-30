@@ -154,10 +154,11 @@ class References extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(
-                width: 76,
-              ),
-              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
+              const Spacer(),
+              const Padding(
+                padding: EdgeInsets.only(right: 15),
+                child: Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,),
+              )
             ],
           ),
         ],

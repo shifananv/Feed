@@ -28,13 +28,13 @@ class ExpectedSalary extends StatelessWidget {
                 ),
               ),
             ),
-            child: Row(
+            child: const Row(
               children: [
                 Icon(Icons.pie_chart,size: 18,color: Color(0xFF260446)),
-                const SizedBox(
+                SizedBox(
                   width: 6,
                 ),
-                const Text(
+                Text(
                   'Expected Salary',
                   style: TextStyle(
                     color: Color(0xFF260446),
@@ -44,9 +44,7 @@ class ExpectedSalary extends StatelessWidget {
                     height: 0,
                   ),
                 ),
-                const SizedBox(
-                  width: 171,
-                ),
+                Spacer(),
                 Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
               ],
             ),

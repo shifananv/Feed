@@ -28,13 +28,13 @@ class Summary extends StatelessWidget {
                 ),
               ),
             ),
-            child: Row(
+            child: const Row(
               children: [
-                Icon(Icons.file_copy,size: 17,color: Color(0xFF260446)),
-                const SizedBox(
+                Icon(Icons.article,size: 17,color: Color(0xFF260446)),
+                SizedBox(
                   width: 6,
                 ),
-                const Text(
+                Text(
                   'Summary',
                   style: TextStyle(
                     color: Color(0xFF260446),
@@ -44,9 +44,7 @@ class Summary extends StatelessWidget {
                     height: 0,
                   ),
                 ),
-                const SizedBox(
-                  width: 212,
-                ),
+                Spacer(),
                 Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,),
               ],
             ),

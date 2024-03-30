@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:task5/widgets/homecard.dart';
 
 class HomePage extends StatefulWidget {
+
   const HomePage({super.key});
 
   @override
@@ -32,7 +33,7 @@ class _HomePageState extends State<HomePage> {
           ),
           actions: [
             IconButton(
-              icon: const Icon(Icons.copy),
+              icon: const Icon(Icons.view_carousel_outlined, size: 28,),
               onPressed: () {},
             ),
           ],
@@ -48,7 +49,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Container(
                 width: 376,
-                height:1130,
+                height:1187,
                 decoration: ShapeDecoration(
                   color: Colors.white,
                   shape: RoundedRectangleBorder(
@@ -56,13 +57,13 @@ class _HomePageState extends State<HomePage> {
                     borderRadius: BorderRadius.circular(30),
                   ),
                 ),
-                child: Column(
+                child: const Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const SizedBox(
+                    SizedBox(
                       height: 19,
                     ),
-                    const Padding(
+                    Padding(
                       padding: EdgeInsets.only(left: 24),
                       child: Text(
                         'Top Challenge Strikers',
@@ -76,293 +77,57 @@ class _HomePageState extends State<HomePage> {
                         ),
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 20,
                     ),
 
-                    //starts here
 
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Row(
                         children: [
-                          const SizedBox(
+                          SizedBox(
                             width: 15,
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                width: 60,
-                                height: 60,
-                                decoration: const ShapeDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/images/p1.png'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              const Text(
-                                'Tarun',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xFF260446),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
-                                  height: 0,
-                                  letterSpacing: 0.50,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
+                          Striker(imagePath: 'assets/images/p1.png', text: 'Tarun'),
+                          SizedBox(
                             width: 15,
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                width: 60,
-                                height: 60,
-                                decoration: const ShapeDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/images/p2.png'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              const Text(
-                                'Justini',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xFF260446),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
-                                  height: 0,
-                                  letterSpacing: 0.50,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
+                          Striker(imagePath: 'assets/images/p2.png', text: 'Justini'),
+                          SizedBox(
                             width: 15,
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                width: 60,
-                                height: 60,
-                                decoration: const ShapeDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/images/p3.png'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              const Text(
-                                'Scott',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xFF260446),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
-                                  height: 0,
-                                  letterSpacing: 0.50,
-                                ),
-                              )
-                            ],
-                          ),
-                          const SizedBox(
+                          Striker(imagePath: 'assets/images/p3.png', text: 'Scott'),
+                          SizedBox(
                             width: 15,
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                width: 60,
-                                height: 60,
-                                decoration: const ShapeDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/images/p4.png'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              const Text(
-                                'Anu',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xFF260446),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
-                                  height: 0,
-                                  letterSpacing: 0.50,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
+                          Striker(imagePath: 'assets/images/p4.png', text: 'Anu'),
+                          SizedBox(
                             width: 15,
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                width: 60,
-                                height: 60,
-                                decoration: const ShapeDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/images/p5.png'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              const Text(
-                                'Erika',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xFF260446),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
-                                  height: 0,
-                                  letterSpacing: 0.50,
-                                ),
-                              )
-                            ],
-                          ),
-                          const SizedBox(
+                          Striker(imagePath: 'assets/images/p5.png', text: 'Erika'),
+                          SizedBox(
                             width: 15,
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                width: 60,
-                                height: 60,
-                                decoration: const ShapeDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/images/p6.png'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              const Text(
-                                'Amy',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xFF260446),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
-                                  height: 0,
-                                  letterSpacing: 0.50,
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(
+                          Striker(imagePath: 'assets/images/p6.png', text: 'Amy'),
+                          SizedBox(
                             width: 15,
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                width: 60,
-                                height: 60,
-                                decoration: const ShapeDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/images/p7.png'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              const Text(
-                                'Rajeev',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xFF260446),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
-                                  height: 0,
-                                  letterSpacing: 0.50,
-                                ),
-                              )
-                            ],
-                          ),
-                          const SizedBox(
+                          Striker(imagePath: 'assets/images/p7.png', text: 'Rajeev'),
+                          SizedBox(
                             width: 15,
                           ),
-                          Column(
-                            children: [
-                              Container(
-                                width: 60,
-                                height: 60,
-                                decoration: const ShapeDecoration(
-                                  image: DecorationImage(
-                                    image: AssetImage('assets/images/p8.png'),
-                                    fit: BoxFit.cover,
-                                  ),
-                                  shape: CircleBorder(),
-                                ),
-                              ),
-                              const SizedBox(
-                                height: 4,
-                              ),
-                              const Text(
-                                'Cameron',
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Color(0xFF260446),
-                                  fontSize: 10,
-                                  fontFamily: 'Nunito',
-                                  fontWeight: FontWeight.w700,
-                                  height: 0,
-                                  letterSpacing: 0.50,
-                                ),
-                              )
-                            ],
-                          ),
-                          const SizedBox(
+                          Striker(imagePath: 'assets/images/p8.png', text: 'Cameron'),
+                          SizedBox(
                             width: 15,
                           ),
                         ],
                       ),
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 6,
                     ),
-                      //const HomeCard(title: 'Data Science Olympiad',description:'Identify top data scientists through real-world challenges and solutions.' ,evaluationtext: '5 Round Evaluation Process',imagePath: 'assets/images/tcs.png',roletext: 'Be a Data Scientist at TCS',),
-                      //const SizedBox(height: 16,),
-                      //const HomeCard(title: 'AI Analysis Showcase',description:'Recognize exceptional AI expertise via practical analysis and problem-solving demonstrations.' ,evaluationtext: '7 Round Evaluation Process',imagePath: 'assets/images/atlassian.png',roletext:'Placement Assured Challenge',),
-                  const HomeCard(),
+                  HomeCard(),
                   ],
                 ),
               ),
@@ -402,3 +167,51 @@ class _HomePageState extends State<HomePage> {
     );
   }
 }
+
+
+
+class Striker extends StatelessWidget {
+  final String imagePath;
+  final String text;
+
+  const Striker({
+    super.key,
+    required this.imagePath,
+    required this.text,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          width: 60,
+          height: 60,
+          decoration:  ShapeDecoration(
+            image: DecorationImage(
+              image: AssetImage(imagePath),   //var imagepath
+              fit: BoxFit.cover,
+            ),
+            shape: const CircleBorder(),
+          ),
+        ),
+        const SizedBox(
+          height: 4,
+        ),
+        Text(
+          text,          //var text
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            color: Color(0xFF260446),
+            fontSize: 10,
+            fontFamily: 'Nunito',
+            fontWeight: FontWeight.w700,
+            height: 0,
+            letterSpacing: 0.50,
+          ),
+        ),
+      ],
+    );
+  }
+}
+

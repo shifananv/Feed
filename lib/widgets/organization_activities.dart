@@ -15,16 +15,16 @@ class OrganizationActivities extends StatelessWidget {
           borderRadius: BorderRadius.circular(15),
         ),
       ),
-      child: Row(
+      child: const Row(
         children: [
-          const SizedBox(
+          SizedBox(
             width: 12,
           ),
           Icon(Icons.groups_3,size: 25,color: Color(0xFF260446)),
-          const SizedBox(
+          SizedBox(
             width: 6,
           ),
-          const Text(
+          Text(
             'Organization Activities',
             style: TextStyle(
               color: Color(0xFF260446),
@@ -34,10 +34,11 @@ class OrganizationActivities extends StatelessWidget {
               height: 0,
             ),
           ),
-          const SizedBox(
-            width: 145,
+          Spacer(),
+          Padding(
+            padding: EdgeInsets.only(right: 11),
+            child: Icon(Icons.add, size: 25, color: const Color.fromARGB(255, 15, 136, 242)),
           ),
-          Image.asset('assets/images/plus.png')
         ],
       ),
     );

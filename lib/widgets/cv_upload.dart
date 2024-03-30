@@ -44,10 +44,11 @@ class CvUpload extends StatelessWidget {
                     height: 0,
                   ),
                 ),
-                SizedBox(
-                  width: 206,
-                ),
-                Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
+                Spacer(),
+                Padding(
+                  padding: EdgeInsets.only(right: 4),
+                  child: Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,),
+                )
               ],
             ),
           ),

@@ -1,4 +1,105 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+
+class AwardsEntry extends StatelessWidget {
+  final String awardTitle;
+  final String awardingOrganization;
+  final String awardDate;
+
+  const AwardsEntry({
+    super.key,
+    required this.awardTitle,
+    required this.awardingOrganization,
+    required this.awardDate,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      margin: const EdgeInsets.symmetric(vertical: 10),
+      child: Row(
+        children: [
+          const SizedBox(
+            width: 10,
+          ),
+          Padding(
+            padding: const EdgeInsets.only(bottom: 0),
+            child: Container(
+              width: 36,
+              height: 36,
+              decoration: ShapeDecoration(
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                  side: const BorderSide(width: 1, color: Color(0xFFD9D9D9)),
+                  borderRadius: BorderRadius.circular(10),
+                ),
+              ),
+              child: Image.asset('assets/images/award.png'),
+            ),
+          ),
+          const SizedBox(
+            width: 10,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              const SizedBox(
+                height: 0,
+              ),
+              Text(
+                awardTitle,
+                style: const TextStyle(
+                  color: Color(0xFF260446),
+                  fontSize: 14,
+                  fontFamily: 'Nunito',
+                  fontWeight: FontWeight.w700,
+                  height: 0,
+                ),
+              ),
+              const SizedBox(
+                height: 7,
+              ),
+              Row(
+                children: [
+                  Text(
+                    awardingOrganization,
+                    style: const TextStyle(
+                      color: Color(0xFF434343),
+                      fontSize: 10,
+                      fontFamily: 'Nunito',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                  const Icon(
+                    Icons.circle,
+                    size: 5,
+                    color: Colors.black,
+                  ),
+                  Text(
+                    '   $awardDate',
+                    style: const TextStyle(
+                      color: Color(0xFF434343),
+                      fontSize: 10,
+                      fontFamily: 'Nunito',
+                      fontWeight: FontWeight.w700,
+                      height: 0,
+                    ),
+                  ),
+                ],
+              ),
+            ],
+          ),
+          const Spacer(),
+          const Padding(
+            padding: EdgeInsets.only(right: 15),
+            child: Icon(Icons.edit_square, color: Color.fromARGB(255, 15, 136, 242), size: 21),
+          )
+        ],
+      ),
+    );
+  }
+}
 
 class Awards extends StatelessWidget {
   const Awards({super.key});
@@ -28,13 +129,13 @@ class Awards extends StatelessWidget {
                 ),
               ),
             ),
-            child: Row(
+            child: const Row(
               children: [
-                Icon(Icons.star,size: 25,color: Color(0xFF260446)),
-                const SizedBox(
+                Icon(Icons.star, size: 25, color: Color(0xFF260446)),
+                SizedBox(
                   width: 6,
                 ),
-                const Text(
+                Text(
                   'Awards and Achievements',
                   style: TextStyle(
                     color: Color(0xFF260446),
@@ -44,178 +145,26 @@ class Awards extends StatelessWidget {
                     height: 0,
                   ),
                 ),
-                const SizedBox(
-                  width: 99,
-                ),
-                Image.asset('assets/images/plus.png')
+                Spacer(),
+                Icon(Icons.add, size: 25, color: const Color.fromARGB(255, 15, 136, 242)),
               ],
             ),
           ),
-          const SizedBox(
-            height: 18,
-          ),
-          Row(
-            children: [
-              const SizedBox(
-                width: 10,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 0),
-                child: Container(
-                  width: 36,
-                  height: 36,
-                  decoration: ShapeDecoration(
-                    color: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      side:
-                          const BorderSide(width: 1, color: Color(0xFFD9D9D9)),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                  child: Image.asset('assets/images/award.png'),
+          Expanded(
+            child: ListView(
+              children: const [
+                AwardsEntry(
+                  awardTitle: 'Imiot Best Employee Award',
+                  awardingOrganization: 'Imiot Awards',
+                  awardDate: 'September 2022',
                 ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              const Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(
-                    height: 0,
-                  ),
-                  Text(
-                    'Imiot Best Employee Award',
-                    style: TextStyle(
-                      color: Color(0xFF260446),
-                      fontSize: 14,
-                      fontFamily: 'Nunito',
-                      fontWeight: FontWeight.w700,
-                      height: 0,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 7,
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        'Imiot Awards   ',
-                        style: TextStyle(
-                          color: Color(0xFF434343),
-                          fontSize: 10,
-                          fontFamily: 'Nunito',
-                          fontWeight: FontWeight.w700,
-                          height: 0,
-                        ),
-                      ),
-                      Icon(
-                        Icons.circle,
-                        size: 5,
-                        color: Colors.black,
-                      ),
-                      Text(
-                        '   September 2022',
-                        style: TextStyle(
-                          color: Color(0xFF434343),
-                          fontSize: 10,
-                          fontFamily: 'Nunito',
-                          fontWeight: FontWeight.w700,
-                          height: 0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              const SizedBox(
-                width: 80,
-              ),
-              const Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
-            ],
-          ),
-          const SizedBox(
-            height: 20,
-          ),
-          Row(
-            children: [
-              const SizedBox(
-                width: 10,
-              ),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 0),
-                child: Container(
-                  width: 36,
-                  height: 36,
-                  decoration: ShapeDecoration(
-                    color: Colors.white,
-                    shape: RoundedRectangleBorder(
-                      side:
-                          const BorderSide(width: 1, color: Color(0xFFD9D9D9)),
-                      borderRadius: BorderRadius.circular(10),
-                    ),
-                  ),
-                  child: Image.asset('assets/images/award.png'),
+                AwardsEntry(
+                  awardTitle: 'UI Developer of the Month',
+                  awardingOrganization: 'Deloitte Employee Forums',
+                  awardDate: 'December 2021',
                 ),
-              ),
-              const SizedBox(
-                width: 10,
-              ),
-              const Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  SizedBox(
-                    height: 0,
-                  ),
-                  Text(
-                    'UI Developer of the Month',
-                    style: TextStyle(
-                      color: Color(0xFF260446),
-                      fontSize: 14,
-                      fontFamily: 'Nunito',
-                      fontWeight: FontWeight.w700,
-                      height: 0,
-                    ),
-                  ),
-                  SizedBox(
-                    height: 7,
-                  ),
-                  Row(
-                    children: [
-                      Text(
-                        'Deloitte Employee Forums   ',
-                        style: TextStyle(
-                          color: Color(0xFF434343),
-                          fontSize: 10,
-                          fontFamily: 'Nunito',
-                          fontWeight: FontWeight.w700,
-                          height: 0,
-                        ),
-                      ),
-                      Icon(
-                        Icons.circle,
-                        size: 5,
-                        color: Colors.black,
-                      ),
-                      Text(
-                        '   December 2021',
-                        style: TextStyle(
-                          color: Color(0xFF434343),
-                          fontSize: 10,
-                          fontFamily: 'Nunito',
-                          fontWeight: FontWeight.w700,
-                          height: 0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ],
-              ),
-              const SizedBox(
-                width: 38,
-              ),
-              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
-            ],
+              ],
+            ),
           ),
         ],
       ),

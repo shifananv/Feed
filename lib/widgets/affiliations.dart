@@ -30,7 +30,7 @@ class Affiliations extends StatelessWidget {
             ),
             child: Row(
               children: [
-                Icon(Icons.domain_verification,size: 25,color: Color(0xFF260446),),
+                const Icon(Icons.domain_verification,size: 25,color: Color(0xFF260446),),
                 const SizedBox(
                   width: 6,
                 ),
@@ -44,9 +44,7 @@ class Affiliations extends StatelessWidget {
                     height: 0,
                   ),
                 ),
-                const SizedBox(
-                  width: 209,
-                ),
+                const Spacer(),
                 Image.asset('assets/images/plus.png')
               ],
             ),
@@ -122,10 +120,11 @@ class Affiliations extends StatelessWidget {
                   ),
                 ],
               ),
-              const SizedBox(
-                width: 123,
-              ),
-              Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,)
+              const Spacer(),
+              const Padding(
+                padding: EdgeInsets.only(right: 15),
+                child: Icon(Icons.edit_square,color: Color.fromARGB(255, 15, 136, 242),size: 21,),
+              )
             ],
           ),
         ],
